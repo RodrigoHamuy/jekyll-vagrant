@@ -1,15 +1,13 @@
-> Note: I have stopped maintaince on this project.  I currenlty use Docker to develop jekyll projects locally.  You can find more about running jekyll with Docker at http://www.jamessturtevant.com/posts/Running-Jekyll-in-Windows-using-Docker/
-
 jekyll-vagrant
 ==============
-
-Environment for developing jekyll projects locally.  Blog post at http://www.jamessturtevant.com/posts/running-jekyll-in-windows/
 
 ## Setup
 1. Make sure Vagrant and your favorite virtual machine are installed.
 2. Clone this repository
-3. Open command prompt to location of the Vagrantfile and run ```vagrant up```
-4. Jekyll and all it's dependencies are installed!
+3. If you don't have it, install vagrant fsnotify ``vagrant plugin install vagrant-fsnotify``
+4. Run ``vagrant fsnotify`` to watch folders between host and guest.
+5. Open command prompt to location of the Vagrantfile and run ```vagrant up```
+6. Jekyll and all it's dependencies are installed!
 
 ## Existing Jekyll Projects
 1. Copy the projects folder to the folder that contains the vagrantfile.  
