@@ -19,4 +19,9 @@ jekyll-vagrant
 1.  Open a command prompt to location of the Vagrantfile and run ```vagrant ssh```
 2.  Once on the VM prompt ```cd /vagrant```
 3.  Create new site with ```jekyll new <sitename>```
-4.  Start the jekyll server ```jekyll serve --force_polling``` (force polling is required with vagrant because of share)
+4.  Start the jekyll server ```jekyll serve --host 0.0.0.0 --force_polling``` (force polling is required with vagrant because of share)
+
+## To use browser-sync
+1. Run ``npm install --no-bin-links``.
+The --no-bin-links parameter is to not use symbolic links, which are not working by default if your host machine is Windows.
+2. Run ``gulp``.

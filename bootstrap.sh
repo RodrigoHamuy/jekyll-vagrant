@@ -17,4 +17,18 @@ apt-get -y install ruby2.1-dev
 sudo gem update --system
 sudo gem install github-pages
 
-apt-get -y install nodejs
+# apt-get -y install nodejs
+# apt-get -y install npm
+
+# Install the latest version of Node
+cd ~
+curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+bash nodesource_setup.sh
+apt-get install nodejs
+apt-get install build-essential
+
+# Install Jekyll
+gem install jekyll bundler pygments
+
+# required to run browser-sync
+npm install -g gulp
